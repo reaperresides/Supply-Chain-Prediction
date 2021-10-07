@@ -1,0 +1,182 @@
+{% load static %}
+<head>
+  <nav class="navbar navbar-light bg-warning">
+    <a class="navbar-brand" href="#"><h1>Supply chain prediction</h1></a>
+  </nav>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+</head>
+
+<form method=POST>
+    {% csrf_token %}
+    
+    <br>
+ 
+    </div> 
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="DFS">Days for shipment (scheduled)</label>
+        <input class="form-control" name="DFSS" id="DFS" placeholder="Days for shipment">
+          <br>
+        </div>
+        <div class="col">
+          <label for="LDR">Late delivery Risk</label>
+          <input class="form-control" name="LDRR" id="LDR" placeholder="Late Delivery Risk">
+          <br>
+        </div>
+        <div class="col">
+          <label for="LT">Latitude</label>
+          <input class="form-control" name="LTT" id="LT" placeholder="Latitude">
+          <br>
+        </div>
+        
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="LG">Longitude</label>
+          <input class="form-control" name="LGG" id="LG" placeholder="Longitude">
+          <br>
+        </div>
+        <div class="col">
+          <label for="OIDR">Order Item Discount Rate</label>
+          <input class="form-control" name="OIDRR" id="OIDR" placeholder="Order Item Discount Rate">
+          <br>
+        </div>
+        <div class="col">
+          <label for="OIPR">Order Item Profit Ratio</label>
+          <input class="form-control" name="OIPRR" id="OIPR" placeholder="Order Item Profit Ratio">
+          <br>
+        </div>
+        
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="OID">Order Item Discount</label>
+          <input class="form-control" name="OIDD" id="OID" placeholder="Order Item Discount">
+          <br>
+        </div>
+        <div class="col">
+          <label for="OIQ">Order Item Quantity</label>
+          <input class="form-control" name="OIQQ" id="OIQ" placeholder="Order Item Quantity">
+          <br>
+        </div>
+        <div class="col">
+          <label for="Sa">Sales</label>
+          <input class="form-control" name="Saa" id="Sa" placeholder="Sales">
+          <br>
+        </div>
+        
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="CS">Customer Segment</label>
+          <br>
+          <select class="custom-select" name="CSS" id="CS">
+            <option value="1">Corporate</option>
+            <option value="2">Home Office</option>
+            <option value="3">Consumer</option>
+          </select>
+          <br>
+          <br>
+        </div>
+        <div class="col">
+          <label for="CN">Category Name</label>
+          <br>
+          <select class="custom-select" name="CNN" id="CN">
+            <option value="1">Baby</option>
+            <option value="2">Boxing & MMA</option>
+            <option value="3">Camping & Hiking</option>
+            <option value="4">Cardio Equipment</option> 
+            <option value="5">Children's Clothing</option>
+            <option value="6">Cleats</option>
+            <option value="7">Crafts</option>
+            <option value="8">Electronics</option>
+            <option value="9">Fishing</option>
+            <option value="10">Fitness Accessories</option>
+            <option value="11">Garden</option>
+            <option value="12">Girls' Apparel</option>
+            <option value="13">Golf Apparel</option>
+            <option value="14">Golf Balls</option>
+            <option value="15">Golf Gloves</option> 
+            <option value="16">Golf Shoes</option>
+            <option value="17">Hunting & Shooting</option>
+            <option value="18">Indoor/Outdoor Games</option>
+            <option value="19">Kids' Golf Clubs</option>
+            <option value="20">Men's Clothing</option>
+            <option value="21">Men's Footwear</option>
+            <option value="22">Men's Golf Clubs</option>
+            <option value="23">Shop By Sport</option>
+            <option value="24">Toys</option>
+            <option value="25">Trade-In</option>
+            <option value="26">Water Sports</option> 
+            <option value="27">Women's Apparel</option>
+            <option value="28">Women's Clothing</option>
+            <option value="29">Women's Golf Clubs</option>
+            <option value="30">Cameras</option>
+          </select>
+          <br>
+        </div>
+        <div class="col">
+          <label for="Mr">Market</label>
+          <br>
+          <select class="custom-select" name="Mrr" id="Mr">
+            <option value="1">Europe</option>
+            <option value="2">LATAM</option>
+            <option value="3">Pacific Asia</option>
+            <option value="4">USCA</option>
+            <option value="5">Africa</option>
+          </select>
+          <br>
+        </div>
+        
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="Ty">Type</label>
+          <br>
+          <select class="custom-select" name="Tyy" id="Ty">
+            <option value="1">Debit</option>
+            <option value="2">Payment</option>
+            <option value="3">Transfer</option>
+            <option value="3">Cash</option>
+          </select>
+          <br>
+        </div>
+        <div class="col">
+          <label for="DN">Department Name</label>
+          <br>
+          <select class="custom-select" name="DNN" id="DN">
+            <option value="1">Fan Shop</option>
+            <option value="2">Footwear</option>
+            <option value="3">Golf</option>
+            <option value="4">Outdoors</option> 
+            <option value="5">Apparel</option>
+            <option value="6">Fitness</option>
+            <option value="7">Discs Shop</option>
+            <option value="8">Technology </option>
+            <option value="9">Pet Shop</option>
+            <option value="10">Book Shop</option>
+            <option value="11">Health and Beauty</option>
+          </select>
+          <br>
+        </div>
+        <div class="col">
+          <br>
+          
+        </div>
+        
+      </div>
+      <br>
+    </div>
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+
+</form>

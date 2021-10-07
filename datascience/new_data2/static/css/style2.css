@@ -1,0 +1,22 @@
+.navbar
+{
+    border:5px solid #000;
+    padding-left: 10px;
+}
+
+.btn-primary {
+    margin-left: 125px;
+}
+
+select {
+    word-wrap: normal;
+    background-color: #ffc107;
+    width: 215px;
+    border-radius: 4px;
+    height: 38px;
+    border: none;
+}
+
+.h1{
+    padding-left: 100px;
+}
