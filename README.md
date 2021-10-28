@@ -48,8 +48,10 @@ A machine learning model to predict the optimized mode of shippment
 # Interface (Django Framework)
 ![image](https://user-images.githubusercontent.com/65457907/139193391-f3a90073-9570-4d9b-a134-a0bab1d04b5d.png)
 
-
-
+# Created By
+- imran ishtiyak ahmed
+- imranishtiyakahmed@gmail.com
+- LinkedIn https://www.linkedin.com/in/mohd-imran-shaikh-b860041bb
 
 
 
